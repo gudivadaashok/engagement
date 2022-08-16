@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Engagement</title>
+</head>
+
+<style>
+$primary: #92c9e0;
+$border-color: #e6e6e6;
+
+html {
+  background: #f5f7f9;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $border-color;
+  margin: 12px 0;
+}
+
+.boarding-pass {
+  display: flex;
+  border-radius: 24px;
+  box-shadow: 0 2px 6px 0 rgba(#000, 0.1);
+  width: 700px;
+  height: 284px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 180px;
+  border-left: 1px dashed $border-color;
+
+  .top-stripe {
+    justify-content: center;
+
+    i {
+      margin-left: 8px;
+    }
+  }
+}
+
+.top-stripe {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 36px;
+  background: $primary;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.left-body {
+  padding: 12px 24px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.left-middle {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.to {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 12px;
+  color: #888;
+}
+
+.flight-icon {
+  transform: rotate(90deg);
+}
+
+.name {
+  flex: 1;
+  padding: 0 16px;
+  text-align: center;
+  color: $primary;
+
+  strong {
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+.grid {
+  display: flex;
+  margin-left: -16px;
+}
+
+.grid-item {
+  flex: 1 1 auto;
+  padding-left: 16px;
+}
+
+label {
+  display: block;
+  font-size: 8px;
+  color: #888;
+  margin-bottom: 4px;
+
+  * + & {
+    margin-top: 8px;
+  }
+}
+
+.value {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.qr-code {
+  width: 60px;
+  height: 60px;
+  background: #f5f5f5;
+  margin-bottom: 8px;
+}
+
+.more-info {
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.right-body {
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.join {
+  font-size: 12px;
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.date {
+  border: 1px solid $border-color;
+  padding: 12px;
+  text-align: center;
+
+  div {
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+
+.bar-code {
+  margin-top: 16px;
+  background: #f5f5f5;
+  height: 32px;
+  width: 120px;
+}
+</style>
+
+<body>
+  <div class="boarding-pass">
+    <div class="left">
+      <div class="top-stripe">
+        Boarding Pass
+      </div>
+      <div class="left-body">
+        <div class="left-header">
+          <div>
+            We request the honour of your<br />
+            presence at the Engagement of
+          </div>
+          <div style="text-align: right">
+            ***VIP TICKET***<br />
+            ***1909 | GUDI****
+          </div>
+        </div>
+        <hr>
+        <div class="left-middle">
+          <div class="name">
+            <strong>ASHOK</strong><br>
+            GUDIVADA
+          </div>
+          <div class="to"><i class="material-icons flight-icon">flight</i></div>
+          <div class="name">
+            <strong>SRUTHI</strong><br>
+            SARIPUDI
+          </div>
+        </div>
+        <hr>
+        <div class="left-footer">
+          <div class="grid">
+            <div class="grid-item" style="width: 130px">
+              <label>DESTINATION</label>
+              <div class="value">
+                Herndon<br>
+                Virginia<br>
+                VA 20171
+              </div>
+            </div>
+            <div class="grid-item">
+              <label>DATE</label>
+              <div class="value">
+                August 21<sup>th</sup><br>
+                2022
+              </div>
+              <label>TIME</label>
+              <div class="value">
+                4:00 PM<br>
+                <small>Engagement and Dinner to Follow</small>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="qr-code"></div>
+              <div class="more-info">
+                For more info:<br>
+                engagement.ashokg.dev
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="top-stripe">
+        RSVP
+        <i class="material-icons flight-icon">flight</i>
+      </div>
+      <div class="right-body">
+        <div class="join">Please join us</div>
+        <div class="date">
+          <small>Aug 2022</small>
+          <div>21</div>
+        </div>
+        <div class="bar-code"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
