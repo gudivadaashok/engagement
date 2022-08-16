@@ -6,9 +6,6 @@
 </head>
 
 <style>
-$primary: #92c9e0;
-$border-color: #e6e6e6;
-
 html {
   background: #f5f7f9;
   height: 100%;
@@ -24,14 +21,14 @@ body {
 
 hr {
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #e6e6e6;
   margin: 12px 0;
 }
 
 .boarding-pass {
   display: flex;
   border-radius: 24px;
-  box-shadow: 0 2px 6px 0 rgba(#000, 0.1);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   width: 700px;
   height: 284px;
   background: #fff;
@@ -46,15 +43,13 @@ hr {
   display: flex;
   flex-direction: column;
   flex-basis: 180px;
-  border-left: 1px dashed $border-color;
-
-  .top-stripe {
-    justify-content: center;
-
-    i {
-      margin-left: 8px;
-    }
-  }
+  border-left: 1px dashed #e6e6e6;
+}
+.right .top-stripe {
+  justify-content: center;
+}
+.right .top-stripe i {
+  margin-left: 8px;
 }
 
 .top-stripe {
@@ -62,7 +57,7 @@ hr {
   align-items: center;
   padding: 0 24px;
   height: 36px;
-  background: $primary;
+  background: #92c9e0;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -89,8 +84,8 @@ hr {
 }
 
 .to {
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -107,12 +102,11 @@ hr {
   flex: 1;
   padding: 0 16px;
   text-align: center;
-  color: $primary;
-
-  strong {
-    font-weight: bold;
-    font-size: 24px;
-  }
+  color: #92c9e0;
+}
+.name strong {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .grid {
@@ -130,10 +124,9 @@ label {
   font-size: 8px;
   color: #888;
   margin-bottom: 4px;
-
-  * + & {
-    margin-top: 8px;
-  }
+}
+* + label {
+  margin-top: 8px;
 }
 
 .value {
@@ -171,14 +164,13 @@ label {
 }
 
 .date {
-  border: 1px solid $border-color;
+  border: 1px solid #e6e6e6;
   padding: 12px;
   text-align: center;
-
-  div {
-    font-size: 48px;
-    font-weight: bold;
-  }
+}
+.date div {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .bar-code {
